@@ -6,6 +6,9 @@
 #Content
 * What is BTLE
 * How does it work on Android
+* Simple Bike Computer
+	* Hardware/setup - bike
+	* Hardware - phone
 * How does it work on *other* platforms?
 	* Swift iOS/MacOSX
 
