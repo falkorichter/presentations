@@ -1,5 +1,7 @@
 # Simple Bike Computer
-### doing something useful BLTE as a geek
+### doing something useful with BLTE as a geek
+##### git clonehttps://github.com/deadfalkon/simple-bike-computer-presentation.git
+##### pull requests are welcome!
 
 ---
 
@@ -159,7 +161,9 @@ adapter.startLeScan(serviceUUIDs, new BluetoothAdapter.LeScanCallback() {
 Meet the AndroidSimpleBikeComputer
 
 ```sh
-git clone https://github.com/deadfalkon/android-simple-bike-computer.gi	
+git clone https://github.com/deadfalkon/android-simple-bike-computer.git
+git clone https://github.com/deadfalkon/simple-bike-computer-presentation.git
+	
 ```
 
 ![inline 20%](https://travis-ci.org/deadfalkon/android-simple-bike-computer.svg?branch=master)![inline 20%](https://travis-ci.org/deadfalkon/android-simple-bike-computer.svg?branch=develop)
