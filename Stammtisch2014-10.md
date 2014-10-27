@@ -75,18 +75,19 @@ Connect.java
 1. Subscribe to **Notify** Characteristic *org.bluetooth.characteristic.csc_measurement*
 2. extract values
 3. display them
+4. read RSSI (monitor the connection)
 
 ---
 #Android: Scan and connect
 ```java
-   final BluetoothAdapter adapter = bluetooth.getAdapter();
-   UUID[] serviceUUIDs = new UUID[]{CSC_SERVICE_UUID};
-   adapter.startLeScan(serviceUUIDs, new BluetoothAdapter.LeScanCallback() {
-		@Override
-		public void onLeScan(BluetoothDevice device, int rssi, byte[] scanRecord) {
-			device.connectGatt(Connect.this, autoConnectCheckBox.isChecked(), bluetoothGattCallback);
-		}
+final BluetoothAdapter adapter = bluetooth.getAdapter();
+UUID[] serviceUUIDs = new UUID[]{CSC_SERVICE_UUID};
+adapter.startLeScan(serviceUUIDs, new BluetoothAdapter.LeScanCallback() {
+	@Override
+	public void onLeScan(BluetoothDevice device, int rssi, byte[] scanRecord) {
+		device.connectGatt(Connect.this, autoConnectCheckBox.isChecked(), bluetoothGattCallback);
 	}
+});
 ```
 
 ---
@@ -94,18 +95,18 @@ Connect.java
 ######BluetoothGattCallback:
 
 ```java
-   @Override
-   public void onConnectionStateChange(BluetoothGatt gatt, int status, int state) {
-       super.onConnectionStateChange(gatt, status, state);
-       switch (state) {
-           	case BluetoothGatt.STATE_CONNECTED: {
-               showText("STATE_CONNECTED", Style.INFO);
-               setConnectedGatt(gatt);
-               gatt.discoverServices();
-               break;
-			}
+@Override
+public void onConnectionStateChange(BluetoothGatt gatt, int status, int state) {
+    super.onConnectionStateChange(gatt, status, state);
+    switch (state) {
+    	case BluetoothGatt.STATE_CONNECTED: {
+			showText("STATE_CONNECTED", Style.INFO);
+			setConnectedGatt(gatt);
+			gatt.discoverServices();
+			break;		
 		}
 	}
+}
 ```
 
 ---
@@ -114,42 +115,55 @@ Connect.java
 ######BluetoothGattCallback:
 
 ```java
-	@Override
-    public void onServicesDiscovered(BluetoothGatt gatt, int status) {
-    	super.onServicesDiscovered(gatt, status);
-        BluetoothGattCharacteristic valueCharacteristic = gatt.getService(CSC_SERVICE_UUID).getCharacteristic(CSC_CHARACTERISTIC_UUID);
-        boolean notificationSet = gatt.setCharacteristicNotification(valueCharacteristic, true);
-        BluetoothGattDescriptor descriptor = valueCharacteristic.getDescriptor(BTLE_NOTIFICATION_DESCRIPTOR_UUID);
-        descriptor.setValue(BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE);
-        boolean writeDescriptorSuccess = gatt.writeDescriptor(descriptor);
-	}
+@Override
+public void onServicesDiscovered(BluetoothGatt gatt, int status) {
+	super.onServicesDiscovered(gatt, status);
+    BluetoothGattCharacteristic valueCharacteristic = gatt.getService(CSC_SERVICE_UUID).getCharacteristic(CSC_CHARACTERISTIC_UUID);
+    boolean notificationSet = gatt.setCharacteristicNotification(valueCharacteristic, true);
+    BluetoothGattDescriptor descriptor = valueCharacteristic.getDescriptor(BTLE_NOTIFICATION_DESCRIPTOR_UUID);
+    descriptor.setValue(BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE);
+    boolean writeDescriptorSuccess = gatt.writeDescriptor(descriptor);
+}
 ```
 ---
 #Android: Monitor the RSSI
 ######BluetoothGattCallback:
 ```java
-	@Override
-	public void onReadRemoteRssi(BluetoothGatt gatt, int rssi, int status) {
-		super.onReadRemoteRssi(gatt, rssi, status);
-		listener.updateRssiDisplay(rssi);
-	}
-	@Override
-	public void onCharacteristicChanged(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic) {
-		super.onCharacteristicChanged(gatt, characteristic);
-		gatt.readRemoteRssi();
-	}
+@Override
+public void onReadRemoteRssi(BluetoothGatt gatt, int rssi, int status) {
+	super.onReadRemoteRssi(gatt, rssi, status);
+	listener.updateRssiDisplay(rssi);
+}
+@Override
+public void onCharacteristicChanged(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic) {
+	super.onCharacteristicChanged(gatt, characteristic);
+	gatt.readRemoteRssi();
+}
 ```
+---
+
 ######Also when scanning:
 ```java
-	final BluetoothAdapter adapter = bluetooth.getAdapter();
-     UUID[] serviceUUIDs = new UUID[]{CSC_SERVICE_UUID};
-     adapter.startLeScan(serviceUUIDs, new BluetoothAdapter.LeScanCallback() {
-         @Override
-         public void onLeScan(BluetoothDevice device, int rssi, byte[] scanRecord) {
-			listener.updateRssiDisplay(rssi);
-         }
-     });
+final BluetoothAdapter adapter = bluetooth.getAdapter();
+UUID[] serviceUUIDs = new UUID[]{CSC_SERVICE_UUID};
+adapter.startLeScan(serviceUUIDs, new BluetoothAdapter.LeScanCallback() {
+	@Override
+	public void onLeScan(BluetoothDevice device, int rssi, byte[] scanRecord) {
+		listener.updateRssiDisplay(rssi);
+	}
+});
 ```
+---
+#Android
+
+Meet the AndroidSimpleBikeComputer
+
+```sh
+git clone https://github.com/deadfalkon/android-simple-bike-computer.gi	
+```
+
+![inline 20%](https://travis-ci.org/deadfalkon/android-simple-bike-computer.svg?branch=master)![inline 20%](https://travis-ci.org/deadfalkon/android-simple-bike-computer.svg?branch=develop)
+
 
 ---
 
