@@ -77,9 +77,7 @@ Connect.java
 3. display them
 
 ---
-#BTLE on Android
-Scan and connect
-
+#Android: Scan and connect
 ```java
    final BluetoothAdapter adapter = bluetooth.getAdapter();
    UUID[] serviceUUIDs = new UUID[]{CSC_SERVICE_UUID};
@@ -92,10 +90,8 @@ Scan and connect
 ```
 
 ---
-#BTLE on Android
-Scan for Services
-
-BluetoothGattCallback:
+#Android: Scan for Services
+######BluetoothGattCallback:
 
 ```java
    @Override
@@ -113,10 +109,9 @@ BluetoothGattCallback:
 ```
 
 ---
-#BTLE on Android
-Register for Updates of the **org.bluetooth.characteristic.csc_measurement**
-
-BluetoothGattCallback:
+#Android: Register for Updates
+######Register for Updates of the **org.bluetooth.characteristic.csc_measurement**
+######BluetoothGattCallback:
 
 ```java
 	@Override
@@ -130,28 +125,28 @@ BluetoothGattCallback:
 	}
 ```
 ---
-#BTLE on Android
-Monitor the RSSI
-
-BluetoothGattCallback:
-
+#Android: Monitor the RSSI
+######BluetoothGattCallback:
 ```java
 	@Override
-     public void onReadRemoteRssi(BluetoothGatt gatt, int rssi, int status) {
-         super.onReadRemoteRssi(gatt, rssi, status);
-         updateRssiDisplay(rssi);
-     }
+	public void onReadRemoteRssi(BluetoothGatt gatt, int rssi, int status) {
+		super.onReadRemoteRssi(gatt, rssi, status);
+		listener.updateRssiDisplay(rssi);
+	}
+	@Override
+	public void onCharacteristicChanged(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic) {
+		super.onCharacteristicChanged(gatt, characteristic);
+		gatt.readRemoteRssi();
+	}
 ```
-
-Also when scanning:
-
+######Also when scanning:
 ```java
 	final BluetoothAdapter adapter = bluetooth.getAdapter();
      UUID[] serviceUUIDs = new UUID[]{CSC_SERVICE_UUID};
      adapter.startLeScan(serviceUUIDs, new BluetoothAdapter.LeScanCallback() {
          @Override
          public void onLeScan(BluetoothDevice device, int rssi, byte[] scanRecord) {
-			updateRssiDisplay(rssi);
+			listener.updateRssiDisplay(rssi);
          }
      });
 ```
