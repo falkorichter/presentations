@@ -1,6 +1,6 @@
 # Simple Bike Computer
 ### doing something useful with BLTE as a geek
-##### git clonehttps://github.com/deadfalkon/simple-bike-computer-presentation.git
+##### git clone https://github.com/deadfalkon/simple-bike-computer-presentation.git
 ##### pull requests are welcome!
 
 ---
@@ -155,6 +155,21 @@ adapter.startLeScan(serviceUUIDs, new BluetoothAdapter.LeScanCallback() {
 	}
 });
 ```
+---
+#Android Read other values
+TODO
+
+---
+#Android Write a value
+TODO
+
+---
+#Android Read and Write
+TODO
+
+
+
+
 ---
 #Android
 
