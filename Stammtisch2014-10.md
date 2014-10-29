@@ -76,6 +76,8 @@ Speed and Cadence Sensor
 #Ingedients
 Amazon: "Geschwindigkeit und Trittfrequenz"
 
+No Nexus 4!!!
+
 ---
 #Speed and Cadence
 
@@ -179,6 +181,45 @@ adapter.startLeScan(serviceUUIDs, new BluetoothAdapter.LeScanCallback() {
 	}
 });
 ```
+
+---
+
+![](https://www.youtube.com/watch?v=-QiEwvCGHzA)
+
+---
+#Android Read/Write
+Async interface:
+* one BluetoothGattCallback per device
+	* async execution of commands with callbacks `onCharacteristicRead(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status)`
+
+---
+#Android Read and Write, read/write multiple values
+* read, write, read tricky since the `BluetoothGattCharacteristic` contains the value
+	* Helper class needed
+	* `BluetoothGattCommand` and `BluetoothGattCommandQueue`
+
+---
+#Android Read and Write, read/write multiple values
+######still work in progress[^9]
+
+```java
+final BluetoothAdapter adapter = bluetooth.getAdapter();
+UUID[] serviceUUIDs = new UUID[]{CSC_SERVICE_UUID};
+
+final GattCommandServiceGroup service = new GattCommandServiceGroup(BTUUID.Service.device_information);
+service.addCharacteristicOperation(GattCommand.CommandOperation.OPERATION_READ, BTUUID.Characteristic.manufacturer_name_string);
+service.addCharacteristicOperation(GattCommand.CommandOperation.OPERATION_READ, BTUUID.Characteristic.model_number_string);
+service.addCharacteristicOperation(GattCommand.CommandOperation.OPERATION_READ, BTUUID.Characteristic.firmware_revision_string);
+service.addCharacteristicOperation(GattCommand.CommandOperation.OPERATION_READ, BTUUID.Characteristic.hardware_revision_string);
+service.addCharacteristicOperation(GattCommand.CommandOperation.OPERATION_READ, BTUUID.Characteristic.serial_number_string);
+final GattCommandQueue queue = new GattCommandQueue();
+queue.add(service);
+queue.setGattCommandQueueCallback(<your callback>)
+queue.executeWhenConnected();
+[...]
+```
+[^9]: [Connect.java#L264](https://github.com/deadfalkon/android-simple-bike-computer/blob/develop/app/src/main/java/de/falkorichter/android/simplebikecomputer/Connect.java#L264)
+
 ---
 #Android Wearables
 Of course all this works directly on Android Wear
@@ -187,23 +228,6 @@ Of course all this works directly on Android Wear
 * same code
 * no host app needed
 * wear app => main app, phone app not needed
-
----
-#Android Read other values
-TODO
-
----
-#Android Write a value
-TODO
-
----
-#Android Read and Write, read/write multiple values
-* Execution of operations is asynchronous
-* read, write, read tricky since the `BluetoothGattCharacteristic` contains the value
-	* Helper class needed
-	* `BluetoothGattCommand` and `BluetoothGattCommandQueue`
-	
-
 
 ---
 #Android
