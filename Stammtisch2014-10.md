@@ -6,6 +6,14 @@
 [^1]: Presentation made with [DecksetApp](http://decksetapp.com/) ![inline 8 %](http://cdn3.brettterpstra.com/uploads/2014/03/DecksetIcon.png)
 
 ---
+#about me
+volcer@cbase
+@volkersfreunde
+mobile software
+[about.me/falkorichter](http://about.me/falkorichter)
+
+---
+
 #Content
 * What is BTLE
 * How does it work on Android
@@ -77,6 +85,8 @@ Speed and Cadence Sensor
 Amazon: "Geschwindigkeit und Trittfrequenz"
 
 No Nexus 4!!!
+
+Remove the label o the device with nail polish remover
 
 ---
 #Speed and Cadence
