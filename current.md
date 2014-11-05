@@ -197,6 +197,13 @@ adapter.startLeScan(serviceUUIDs, new BluetoothAdapter.LeScanCallback() {
 ![](https://www.youtube.com/watch?v=-QiEwvCGHzA)
 
 ---
+#Android
+> On Google's Android BLE stack there is a hard limit of 4 unique notification subscriptions during a single connection's lifetime. This is not SensorTag specific. To get around this you must disconnect, and then reconnect with up to 4 new notifications.[^10]
+
+[^10]: [processors.wiki.ti.com accessed at 2014-10-30 13:38](http://processors.wiki.ti.com/index.php/SensorTag_User_Guide#Android)
+
+---
+
 #Android Read/Write
 Async interface:
 * one BluetoothGattCallback per device
