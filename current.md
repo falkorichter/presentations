@@ -81,8 +81,9 @@ Speed and Cadence Sensor
 ![inline 33%](http://ecx.images-amazon.com/images/I/7191wWpGSfL._SL1500_.jpg)![inline 33%](http://ecx.images-amazon.com/images/I/815nGc7aReL._SL1500_.jpg)
 
 ---
-#Ingedients
+#Ingredients
 Amazon: "Geschwindigkeit und Trittfrequenz"
+AliExpress: "Speed Cadence Sensor" (not yet tested, but: a lot cheaper, unlabeled, same build -> same internals(?))
 
 No Nexus 4!!!
 
