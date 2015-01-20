@@ -2,7 +2,6 @@
 
 [^1]: Presentation made with [DecksetApp](http://decksetapp.com/) ![inline 8 %](http://cdn3.brettterpstra.com/uploads/2014/03/DecksetIcon.png)
 
-
 ---
 ##questions?
 #ask them right away!
@@ -11,14 +10,14 @@
 #about me
 falko@sensorberg.com
 https://github.com/falkorichter
-mobile software 
+mobile software Ingenieur
 [about.me/falkorichter](http://about.me/falkorichter)
 
 ---
 #about me
 iOS / Android / anything
 connect smartphone to anything
-sensorberg: iOS, Android, technical consulting
+sensorberg: iOS, Android, technical consulting, nerd-in-residence
 
 ---
 #sensorberg
