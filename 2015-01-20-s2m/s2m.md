@@ -17,39 +17,39 @@ mobile software
 ---
 #about me
 iOS / Android / anything
-connect smart phone to my world
-
+connect smartphone to anything
+sensorberg: iOS, Android, technical consulting
 
 ---
 #sensorberg
-* we sell beacons
+* sell beacons with German QA
 	* USB stick, TI based, Nordic based
-	* German QA
 * planning beacon installations
-    * subways, fairs, showcases
+    * subway, fairs, showcases
 * software integration support
+* case development (including 3D prototyping :)
 * complete software stack...
 
 ---
 #software-stack
-###iOS SDK
-###Android SDK
-###Backend with REST API
-###Management Console[^2]
-###Tools (Showcase Apps[^3], MacBeacon[^4], MacScanner, Technical Scanner, Beacon Configuration Tool, Fully automated Beacon Configuration Tool)
-  
+iOS SDK
+Android SDK
+Backend with REST API
+Management Console[^2]
+Tools (Showcase Apps[^3], MacBeacon[^4], MacScanner, Technical Scanner, Beacon Configuration Tool, Fully automated Beacon Configuration Tool)
+
 [^2]: [manage.sensorberg.com](https://manage.sensorberg.com)
 
 [^4]: [BeaconOSX](https://github.com/sensorberg-dev/BeaconOSX)
 
 [^3]: [GooglePlay](https://play.google.com/store/apps/developer?id=Sensorberg+GmbH)
---
+
+---
 #SDKs
 easy integration
 flexibility
-hello world
 
---
+---
 #Android SDK
 * scan in background
 * stay awake in all neccesary conditions
@@ -57,12 +57,12 @@ hello world
 * resolve beacon events with backend and trigger presentation/reaction
 * Service implementation
 
---
+---
 #iOS SDK
 * tweak CoreLocation to enable background and foreground detection of any beacon
 * resolve beacon events with backend and trigger presentation/reaction
 
---
+---
 #Android Architecture
 * close as possible to the system
 * android.app.AlarmManager, separate process Service, Intent RPC
@@ -73,14 +73,21 @@ hello world
 	* Presenter
 * test driven as much as possible 
 	
---
+---
 #SDK coming soon
 * offline capabilities
 * caching of actions
 * persistence of event in case of no connectivity
 * Volley with Diskbased Cache + OKHttp
 
---
+---
+
+#Open Source
+[Android Sensorscanner](https://github.com/sensorberg-dev/android-frontend-scanner)
+
+A Beacon ranger.
+
+[simplified blueetooth stack](https://github.com/falkorichter/android-simple-bike-computer/tree/develop/bluetooth) -> production code, but still in progress
 
 
 
