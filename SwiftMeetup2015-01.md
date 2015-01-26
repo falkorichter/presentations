@@ -1,9 +1,10 @@
 # Simple Bike Computer[^1]
 ### doing something useful with BLTE as a geek
-##### git clone https://github.com/deadfalkon/simple-bike-computer-presentation.git
+##### git clone https://github.com/deadfalkon/simple-bike-computer-presentation.git[^2]
 ##### pull requests are welcome!
 
 [^1]: Presentation made with [DecksetApp](http://decksetapp.com/) ![inline 8 %](http://cdn3.brettterpstra.com/uploads/2014/03/DecksetIcon.png)
+[^2]: [Android Version of this Presentation on youtube](https://www.youtube.com/watch?v=OSJ8gIPnvDw)
 
 ---
 #about me
