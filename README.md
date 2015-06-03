@@ -1,4 +1,7 @@
-simple-bike-computer-presentation
+presentations by Falko Richter
 =================================
 
-presentation on BTLE
+simpleBikeComputer-btle
+
+
+building an SDK
