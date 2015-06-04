@@ -3,7 +3,7 @@
 ##### git clone https://github.com/falkorichter/presentations;cd building-a-SDK
 ##### pull requests are welcome!
 
-![inline](images/slideLink.png)
+![right 500%](images/slideLink.png)
 
 [^1]: Presentation made with [DecksetApp](http://decksetapp.com/) ![inline 8 %](http://cdn3.brettterpstra.com/uploads/2014/03/DecksetIcon.png)
 
