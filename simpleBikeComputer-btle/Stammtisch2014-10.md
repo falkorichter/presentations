@@ -1,6 +1,6 @@
 # Simple Bike Computer[^1]
 ### doing something useful with BLTE as a geek
-##### git clone https://github.com/deadfalkon/simple-bike-computer-presentation.git
+##### git clone https://github.com/falkorichter/simple-bike-computer-presentation.git
 ##### pull requests are welcome!
 
 [^1]: Presentation made with [DecksetApp](http://decksetapp.com/) ![inline 8 %](http://cdn3.brettterpstra.com/uploads/2014/03/DecksetIcon.png)
@@ -228,7 +228,7 @@ queue.setGattCommandQueueCallback(<your callback>)
 queue.executeWhenConnected();
 [...]
 ```
-[^9]: [Connect.java#L264](https://github.com/deadfalkon/android-simple-bike-computer/blob/develop/app/src/main/java/de/falkorichter/android/simplebikecomputer/Connect.java#L264)
+[^9]: [Connect.java#L271](https://github.com/falkorichter/android-simple-bike-computer/blob/develop/app/src/main/java/de/falkorichter/android/simplebikecomputer/Connect.java#L271)
 
 ---
 #Android Wearables
@@ -245,8 +245,8 @@ Of course all this works directly on Android Wear
 Meet the AndroidSimpleBikeComputer
 
 ```sh
-git clone https://github.com/deadfalkon/android-simple-bike-computer.git
-git clone https://github.com/deadfalkon/simple-bike-computer-presentation.git
+git clone https://github.com/falkorichter/android-simple-bike-computer.git
+git clone https://github.com/falkorichter/simple-bike-computer-presentation.git
 	
 ```
 
@@ -279,9 +279,9 @@ func startBroadcasting(){
 [...]
 ```
 
-[^6]: done: [github.com/deadfalkon/swift-simple-bike-computer/blob/master/Shared/HeartBeatPeripheral.swift](https://github.com/deadfalkon/swift-simple-bike-computer/blob/master/Shared/HeartBeatPeripheral.swift)
+[^6]: done: [github.com/falkorichter/swift-simple-bike-computer/blob/master/Shared/HeartBeatPeripheral.swift](https://github.com/falkorichter/swift-simple-bike-computer/blob/master/Shared/HeartBeatPeripheral.swift)
 
-[^7]: needed: [github.com/deadfalkon/swift-simple-bike-computer/blob/master/Shared/SpeedAndCadencePeripheral.swift](https://github.com/deadfalkon/swift-simple-bike-computer/blob/master/Shared/HeartBeatPeripheral.swift)
+[^7]: needed: [github.com/falkorichter/swift-simple-bike-computer/blob/master/Shared/SpeedAndCadencePeripheral.swift](https://github.com/falkorichter/swift-simple-bike-computer/blob/master/Shared/HeartBeatPeripheral.swift)
 
 ---
 #Swift get notified :1 [^8]
@@ -300,7 +300,7 @@ func centralManagerDidUpdateState(central: CBCentralManager!){
     }
 }
 ```
-[^8]: https://github.com/deadfalkon/swift-simple-bike-computer/blob/master/Shared/CadenceConnector.swift
+[^8]: https://github.com/falkorichter/swift-simple-bike-computer/blob/master/Shared/CadenceConnector.swift
 
 ---
 #Swift get notified :2
