@@ -1,0 +1,62 @@
+task verifyTagDoesNotExits(type: Exec) {
+    description "verify if this build can be archived. fails if the git tag allready exists"
+    doFirst{
+        exec {
+            commandLine "git", "fetch", "--tags"
+        }
+    }
+    commandLine "git", "tag"
+    standardOutput = new ByteArrayOutputStream()
+
+    doLast {
+        def output = standardOutput.toString()
+        output.eachLine{
+            if(it.equalsIgnoreCase(tagName)){
+                throw new GradleException("version ${version} has already been released as tag ${tagName}")
+            }
+        }
+    }
+}
+
+task verifyReleaseBranch(type: Exec){
+    description "verify if this build can be archived. fails if the git tag allready exists"
+
+    doFirst{
+        exec {
+            commandLine "git", "fetch"
+        }
+    }
+
+    commandLine "git", "rev-parse", "HEAD"
+    standardOutput = new ByteArrayOutputStream()
+
+    doLast {
+        String currentRefName = standardOutput.toString().replaceAll("\\s","") //strip whitespaces
+
+        def getGitRoot = "git rev-parse --show-toplevel".execute()
+        if (getGitRoot.waitFor() != 0){
+            throw new GradleException("could not get the root of your git project")
+        }
+        def gitRoot = getGitRoot.text.replaceAll("\\s","")
+
+        String originMasterRef = file(gitRoot + "/.git/refs/remotes/origin/master").text.replaceAll("\\s","") //strip whitespaces
+
+        if (!currentRefName.equalsIgnoreCase(originMasterRef)) {
+            throw new GradleException("you are trying to release from a branch that is not origin/master. Your current revision is ${originMasterRef} but master on origin is ${currentRefName}")
+        }
+    }
+}
+
+task verifyNoSnapshotDependencies << {
+    project.configurations.compile.each {
+        if (it.name.contains("-SNAPSHOT")){
+            throw new GradleException("You are referencing the dependency ${it.name} which is a snapshot on a propper release!")
+        }
+    };
+}
+
+task verifySnapshotRelease << {
+    if (!project.version.contains("-SNAPSHOT") || project.version == null){
+        throw new GradleException("This is not a snapshot release. Version is '${project.version}'")
+    }
+}

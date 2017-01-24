@@ -1,0 +1,68 @@
+task prepareGithubUpload << {
+
+    def tempDir = project.ext.repoDir
+    def branch = project.ext.branch
+
+    if (!file(tempDir).exists()) {
+        println "cloning temp repo to ${tempDir}"
+        exec {
+            commandLine 'git', 'clone', project.ext.releaseRepo, tempDir, '-b', branch
+        }
+    } else {
+        println "updating temp repo"
+        exec {
+            workingDir tempDir
+            commandLine "git", "reset", "HEAD", "--hard"
+        }
+        exec {
+            workingDir tempDir
+            commandLine "git", "clean", "-f"
+        }
+        exec {
+            workingDir tempDir
+            commandLine "git", "pull", "origin", branch
+        }
+
+    }
+}
+
+task pushToGithub << {
+    def tempDir = project.ext.repoDir
+    def branch = project.ext.branch
+    def tagName = project.ext.tagName
+    def currentRemoteName = project.ext.currentRemoteName
+
+    exec {
+        workingDir tempDir
+        commandLine "git", "add", "."
+    }
+    exec {
+        workingDir tempDir
+        commandLine "git", "commit",  "-m\"Release ${tagName}\""
+    }
+    println "creating tag for mvn repo"
+    exec {
+        workingDir tempDir
+        commandLine "git", "tag", tagName
+    }
+    println "pushing tag to mvn repo"
+    exec {
+        workingDir tempDir
+        commandLine "git", "push", "origin",  tagName
+    }
+
+    println "creating tag"
+    exec {
+        commandLine "git", "tag", tagName
+    }
+    println "pushing tag"
+    exec {
+        commandLine "git", "push", currentRemoteName,  tagName
+    }
+
+    println "pushing release to mvn repo"
+    exec {
+        workingDir tempDir
+        commandLine "git", "push", "origin", branch
+    }
+}

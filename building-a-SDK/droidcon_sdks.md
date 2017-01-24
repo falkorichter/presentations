@@ -80,7 +80,7 @@ his imports are broken
 github issues
 zendesk
 gitter.im chat [^3]
-telefone
+telephone
 workshops
 
 **direct interaction might be the best**
@@ -382,7 +382,7 @@ explain it to colleagues
 
 invite somebody external
 
-talk about in at a conference, meetup...
+talk about it at a conference, meetup...
 
 ---
 

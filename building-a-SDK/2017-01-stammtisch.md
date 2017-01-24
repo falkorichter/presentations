@@ -11,48 +11,44 @@
 
 #about sensorberg
 
-* integrate iBeacon interactions in your apps
+* integrate proximity interactions in your apps
 * complete solution
-	* iOS, Android, Windows SDK
+	* iOS, Android, (Windows SDK)
 	* Showcase apps, Utilities
-	* Campaign management Backend + Frontend
+	* Rule management backend + frontend
+	* iBeacon, geofence, ...
 * lot´s of open source software
 
-WE`RE HIRING -> sensorberg.com/jobs
+WE`RE HIRING -> jobs.sensorberg.com
 
 ---
 
-#shameless plug:
-
-#tune your podcatchers to androidpodcast.de[^2]
-
-![right](images/pandroid.png)
-
-[^2]: better SSL support coming soon
-
----
 # [fit] about us
-github.com/falkorichter
-@volkersfreunde
-mobile software developer @ Sensorberg & proud dad since 1515
-[about.me/falkorichter](http://about.me/falkorichter)
-pilot of small things™ -> contact me for Berlin FPV racing
 
 github.com/budius
 @ronaldopace
 android software developer @ Sensorberg & proud dad since 2016
 
 ---
+# [fit] about us
+github.com/falkorichter
+@volkersfreunde
+mobile software developer @ Sensorberg & proud dad since 2015
+[about.me/falkorichter](http://about.me/falkorichter)
+pilot of small things™ -> contact me for Berlin FPV racing
+
+---
 
 #awwww
 ![original](images/hanne.JPG)
+
 ![original](images/mila.JPG)
 
 ---
 
 #Building a SDK
 
-[open source](http://developer.sensorberg.com/android/) at developer.sensorberg.com/android/
+[open source](https://developer.sensorberg.com/android/) at developer.sensorberg.com/android/
 many learnings and good practices
 all samples from actual problems
 all code (used to be) live
@@ -62,7 +58,7 @@ all code (used to be) live
 #general thoughts
 
 listen to your customers
-new features tailored to individial customers
+new features tailored to individual customers
 don´t listen to customers, you are the expert
 release early, release often (at least internally)
 
@@ -83,11 +79,11 @@ his imports are broken
 
 github issues
 zendesk
-gitter.im chat [^3]
+~~gitter.im chat [^3]~~
 telefone
 workshops
 
-**direct interaction might be the best**
+**direct interaction are the best**
 
 [^3]: https://gitter.im/sensorberg-dev/android-sdk
 
@@ -97,7 +93,7 @@ workshops
 #logging
 ![right](images/logcatgtfo.png)
 
-ship a powerfull logging engine!
+ship a powerful logging engine!
 domain logging output
 disable all log output by default
 logging can be turned on
@@ -107,61 +103,24 @@ logging can be turned on
 
 ---
 
+#logging
+
+https://github.com/orhanobut/logger
+
+
+![down](images/logger-custom-tag.png)
+
+---
+
 #testing
 
 no fancy setup
+
 recently switched to Espresso 2.0 with JUnit 4
+
 add your own testrunner from the very start
+
 test on devices
-
----
-
-#testing - multidex
-
-![](images/multidex.png)
-
-our list of test dependencies
-
-```
-	androidTestCompile 'com.squareup:fest-android:1.0.8'
-    androidTestCompile 'org.mockito:mockito-core:1.9.5'
-    androidTestCompile 'com.google.dexmaker:dexmaker:1.0'
-    androidTestCompile 'com.google.dexmaker:dexmaker-mockito:1.0'
-    androidTestCompile ('com.android.support.test.espresso:espresso-core:2.0'){
-        exclude group: 'com.squareup', module: 'javawriter'
-    }
-    androidTestCompile 'com.android.support.test:testing-support-lib:0.1'
-    androidTestCompile 'org.apache.commons:commons-io:1.3.2'
-    androidTestCompile('com.squareup.okhttp:mockwebserver:2.1.0') {
-        exclude group: 'com.squareup.okhttp'
-    }
-    androidTestCompile 'org.apache.commons:commons-io:1.3.2'
-```
-
-we are having the multidex problem 😳
-
----
-#multidex test project
-
-```
-androidTestCompile ('com.android.support:multidex:1.0.0')
-```
-
-```
-public class SensorbergTestRunner extends android.support.test.runner.AndroidJUnitRunner {
-
-    @Override
-    public void onCreate(Bundle arguments) {
-        MultiDex.install(getTargetContext());
-        super.onCreate(arguments);
-```
-* not all tests found and executed on Dalvik, but no crashes
-* no problems with ART
-
----
-
-![](images/multidex1.png)
-![](images/multidex2.png)
 
 ---
 
@@ -188,20 +147,6 @@ build lot´s of samples
 answer integration question with samples
 
 "developer mode"
-
----
-
-#build process
-make sure you can release at the speed you wish, if neccesary every hour.
-
-Bugs are okay, if you can fix them within hours and deploy them that fast, customers will be impressed.
-
-
----
-
-# [fit] gradle
-
-# ❤️❤️❤️
 
 ---
 
@@ -235,21 +180,22 @@ not solved:
 
 #releasing
 
-jcenter ftw
+jcenter ftw | jitpack |
 
-your own public nexus
+~~your own public nexus~~
 
-github pages
+~~github pages~~
 
 ![right](images/githubRepo.png)
 
 ---
 
-#github pages
+#github pages[^6]
 
 check **uploadGithub.gradle** and **verifyTasks.gradle**
 
- * clone repo, deploy artifact, push to mvn-repo
+ * manual verification tasks
+ * clone repo, deploy artifact locally, push to mvn-repo
  * be strict: don´t remove releases, don´t override releases
 
 ```
@@ -259,7 +205,7 @@ repositories {
     }
 }
 ```
-
+[^6]: don´t try this at home
 ---
 
 #jitpack.io
@@ -267,8 +213,6 @@ repositories {
 > Easy to use package repository for GitHub
 
 ![](images/jitpack.png)
-
-[^6]: https://jitpack.io/
 
 ---
 
@@ -399,7 +343,6 @@ SSL pinning:
 
 ---
 
-
 #obfuscation
 
 proguard ftw
@@ -461,3 +404,57 @@ falko@sensorberg.com about sensorberg
 slides[^5]: ![inline 200%](images/slideLink.png)
 
 [^5]: https://github.com/falkorichter/presentations
+
+
+---
+
+# [fit]  backup slides
+
+---
+
+#testing - multidex
+
+![](images/multidex.png)
+
+our list of test dependencies
+
+```
+	androidTestCompile 'com.squareup:fest-android:1.0.8'
+    androidTestCompile 'org.mockito:mockito-core:1.9.5'
+    androidTestCompile 'com.google.dexmaker:dexmaker:1.0'
+    androidTestCompile 'com.google.dexmaker:dexmaker-mockito:1.0'
+    androidTestCompile ('com.android.support.test.espresso:espresso-core:2.0'){
+        exclude group: 'com.squareup', module: 'javawriter'
+    }
+    androidTestCompile 'com.android.support.test:testing-support-lib:0.1'
+    androidTestCompile 'org.apache.commons:commons-io:1.3.2'
+    androidTestCompile('com.squareup.okhttp:mockwebserver:2.1.0') {
+        exclude group: 'com.squareup.okhttp'
+    }
+    androidTestCompile 'org.apache.commons:commons-io:1.3.2'
+```
+
+we are having the multidex problem 😳
+
+---
+#multidex test project
+
+```
+androidTestCompile ('com.android.support:multidex:1.0.0')
+```
+
+```
+public class SensorbergTestRunner extends android.support.test.runner.AndroidJUnitRunner {
+
+    @Override
+    public void onCreate(Bundle arguments) {
+        MultiDex.install(getTargetContext());
+        super.onCreate(arguments);
+```
+* not all tests found and executed on Dalvik, but no crashes
+* no problems with ART
+
+---
+
+![](images/multidex1.png)
+![](images/multidex2.png)
