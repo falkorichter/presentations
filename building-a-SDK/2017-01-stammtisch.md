@@ -192,7 +192,7 @@ jcenter ftw | jitpack |
 
 #github pages[^6]
 
-check **uploadGithub.gradle** and **verifyTasks.gradle**
+check **[uploadGithub.gradle](https://github.com/falkorichter/presentations/blob/master/building-a-SDK/uploadGithub.gradle)** and **[verifyTasks.gradle](https://github.com/falkorichter/presentations/blob/master/building-a-SDK/verifyTasks.gradle)**[^7]
 
  * manual verification tasks
  * clone repo, deploy artifact locally, push to mvn-repo
@@ -200,12 +200,12 @@ check **uploadGithub.gradle** and **verifyTasks.gradle**
 
 ```
 repositories {
-    maven {
-        url "https://raw.github.com/sensorberg-dev/android-sdk/mvn-repo";
-    }
-}
+	maven { url "https://raw.github.com/sensorberg-dev/android-sdk/mvn-repo";
+}}
 ```
 [^6]: don´t try this at home
+[^7]: https://github.com/falkorichter/presentations/blob/master/building-a-SDK/
+
 ---
 
 #jitpack.io
