@@ -1,6 +1,9 @@
 # Building a SDK[^1]
 ### learnings from building the sensorberg Android SDK
-##### git clone https://github.com/falkorichter/presentations;cd building-a-SDK
+```
+git clone https://github.com/falkorichter/presentations
+cd building-a-SDK
+```
 ##### pull requests are welcome!
 
 ![right 500%](images/slideLink.png)
@@ -23,24 +26,28 @@ WE`RE HIRING -> jobs.sensorberg.com
 
 ---
 
-# [fit] about us
+# [fit] about us ①
 
 github.com/budius
 @ronaldopace
 android software developer @ Sensorberg & proud dad since 2016
 
 ---
-# [fit] about us
+# [fit] about us ②
 github.com/falkorichter
 @volkersfreunde
 mobile software developer @ Sensorberg & proud dad since 2015
 [about.me/falkorichter](http://about.me/falkorichter)
-pilot of small things™ -> contact me for Berlin FPV racing
+pilot of small things™
 
 ---
 
-#awwww
+#awwww ①
 ![original](images/hanne.JPG)
+
+---
+
+#awwww ②
 
 ![original](images/mila.JPG)
 
@@ -90,7 +97,7 @@ workshops
 
 ---
 
-#logging
+#logging ①
 ![right](images/logcatgtfo.png)
 
 ship a powerful logging engine!
@@ -101,9 +108,12 @@ logging can be turned on
 * log to file, send to developers...
 * log to server
 
+~~[write your own logging wrapper](https://github.com/sensorberg-dev/android-sdk/blob/v2.0.0/android-sdk/src/main/java/com/sensorberg/sdk/Logger.java)~~
+
+
 ---
 
-#logging
+#logging ②
 
 https://github.com/orhanobut/logger
 https://github.com/budius/logger
@@ -154,34 +164,6 @@ answer integration question with samples
 
 ---
 
-![](images/aar.png)
-
-´´´
-/AndroidManifest.xml (mandatory)
-/classes.jar (mandatory)
-/res/ (mandatory)
-/R.txt (mandatory)
-/assets/ (optional)
-/libs/*.jar (optional)
-/jni/<abi>/*.so (optional)
-/proguard.txt (optional)
-/lint.jar (optional)
-´´´
-
-[^4]: http://tools.android.com/tech-docs/new-build-system/aar-format
-
----
-
-#fatjar / fataar
-
-fataar  = aar with all dependencies
-
-not solved:
- * http://stackoverflow.com/questions/28605367/library-with-bundles-dependencies-fat-aar
- * https://github.com/vRallev/jarjar-gradle
-
----
-
 #releasing
 
 jcenter ftw | jitpack |
@@ -221,7 +203,7 @@ repositories {
 ---
 
 
-#architecture
+#architecture ①
 
 * everything should be testable (if you need to)
 * ~~mock sever requests~~
@@ -231,9 +213,20 @@ repositories {
 
 ---
 
-#architecture cont.
+#architecture ②
 
 ![](images/sdk3.png)
+
+---
+
+#architecture ③
+
+* modularize your library, interfaces, "tiny bit of reflection"
+* BaseSDK
+	* Feature Modules (beacon trigger, wifi trigger single-board-computer optimizations)
+* != [GooglePlayServices](https://developers.google.com/android/guides/setup)
+	* com.google.android.gms:play-services-plus:10.0.1
+	* com.google.android.gms:play-services:10.0.1 
 
 ---
 
@@ -263,6 +256,8 @@ use the settings or other measures.
 ship code early, activate later
 test on production code
 
+TBD: V3 modularization might be the better solution
+
 ---
 
 
@@ -272,15 +267,17 @@ test on production code
 *#*#code#*#* in the dialer
 ```
 * enable features at runtime
-* no persistence!
-* good for switching environments
+* no persistence needed
+* good for switching environments, enabling logging
+* [SensorbergCodeReceiver.java](https://github.com/sensorberg-dev/android-sdk/blob/v2.0.0/android-sdk/src/main/java/com/sensorberg/sdk/receivers/SensorbergCodeReceiver.java) and [AndroidManifest.xml](https://github.com/sensorberg-dev/android-sdk/blob/v2.0.0/android-sdk/src/main/AndroidManifest.xml#L41)
 
 ![](images/secret_codes.png)
 
+
+
 ---
 
-
-#reviews
+#reviews ①
 
 you are alone
 
@@ -296,7 +293,15 @@ talk about in at a conference, meetup...
 
 ---
 
-#dependencies
+#reviews ②
+
+external security reviews might make sense
+* manifest metadata is not secure ~~API-KEY~~
+
+
+---
+
+#dependencies ①
 
 choose wisely
 
@@ -307,7 +312,7 @@ be aware of updates, at least test with newer dependencies
 update your SDK regularly to use the latest dependencies
 
 ---
-#dependencies
+#dependencies ②
 
 ![](images/jcenter.png)
 
@@ -321,10 +326,9 @@ update your SDK regularly to use the latest dependencies
 
 [^7]: https://bintray.com/sensorberg/maven
 
-
 ---
 
-#security?
+#security? ①
 
 ![right](images/jdGui.png)
 
@@ -337,7 +341,7 @@ Decide who you trust, it´s really hard to hide from your host app
 
 ---
 
-#security?
+#security? ②
 
 if you really want to be safe, pull all the strings
 
@@ -347,7 +351,7 @@ SSL pinning:
 
 ---
 
-#obfuscation
+#obfuscation ①
 
 proguard ftw
 
@@ -361,7 +365,7 @@ harder troubleshooting
 
 ---
 
-#proguard
+#proguard ②
 
 check android-sdk/build.gradle
 release a proguard file for your application
@@ -399,13 +403,34 @@ project.ext {
 
 ---
 
-#challenge: independent crash reporting
+#challenge ① independent crash reporting
 
 Challenge: host application most likely has crash reporting
 
 Opportunity: We run our own process
 
 Challenge: Your library/SDK might not in it´s own process
+
+---
+
+#challenge ② cross-application-sdk
+
+Challenge: 2 apps scan both for beacons
+
+Opportunity: Elect one application to scan and use inter-app IPC
+
+Challenge: Security
+
+---
+
+#challenge ③ #fatjar / fataar
+
+fataar  = aar with all dependencies
+
+not solved:
+ * [stackoverflow.com/questions/28605367/library-with-bundles-dependencies-fat-aar](http://stackoverflow.com/questions/28605367/library-with-bundles-dependencies-fat-aar)
+ * [github.com/vRallev/jarjar-gradle](https://github.com/vRallev/jarjar-gradle)
+
 
 ---
 
