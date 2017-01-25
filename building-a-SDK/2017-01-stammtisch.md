@@ -106,7 +106,10 @@ logging can be turned on
 #logging
 
 https://github.com/orhanobut/logger
+https://github.com/budius/logger
 
+* (fork with non-static methods)[https://github.com/budius/logger/commits/feature/printer_instance]
+* (option for file logging)[https://github.com/orhanobut/logger/pull/104]
 
 ![down](images/logger-custom-tag.png)
 
@@ -130,6 +133,7 @@ use services like hockeyapp/crashlytics
 "release early, release often"
 play alpha & beta
 you want problems with your SDK/library happen to a colleague
+hockeyapp continous releases
 
 ---
 
@@ -395,11 +399,22 @@ project.ext {
 
 ---
 
+#challenge: independent crash reporting
+
+Challenge: host application most likely has crash reporting
+
+Opportunity: We run our own process
+
+Challenge: Your library/SDK might not in it´s own process
+
+---
+
+
 #Questions
 
 pull request, issues on github
 falko@sensorberg.com about sensorberg
-@volkersfreunde for everything else
+@volkersfreunde|@ronaldopace for everything else
 
 slides[^5]: ![inline 200%](images/slideLink.png)
 
@@ -434,7 +449,7 @@ our list of test dependencies
     androidTestCompile 'org.apache.commons:commons-io:1.3.2'
 ```
 
-we are having the multidex problem 😳
+we ~~are~~ were having the multidex problem 😳
 
 ---
 #multidex test project
@@ -455,6 +470,7 @@ public class SensorbergTestRunner extends android.support.test.runner.AndroidJUn
 * no problems with ART
 
 ---
+# [fit]  without multidex | with multidex
 
 ![](images/multidex1.png)
 ![](images/multidex2.png)
