@@ -82,21 +82,6 @@ his imports are broken
 
 ---
 
-#offer support
-
-github issues
-zendesk
-~~gitter.im chat [^3]~~
-telefone
-workshops
-
-**direct interaction are the best**
-
-[^3]: https://gitter.im/sensorberg-dev/android-sdk
-
-
----
-
 #logging ①
 ![right](images/logcatgtfo.png)
 
@@ -136,17 +121,6 @@ add your own testrunner from the very start
 test on devices
 
 ---
-
-#dogfooding
-
-use services like hockeyapp/crashlytics
-"release early, release often"
-play alpha & beta
-you want problems with your SDK/library happen to a colleague
-hockeyapp continous releases
-
----
-
 
 #build an app
 
@@ -226,7 +200,7 @@ repositories {
 	* Feature Modules (beacon trigger, wifi trigger single-board-computer optimizations)
 * != [GooglePlayServices](https://developers.google.com/android/guides/setup)
 	* com.google.android.gms:play-services-plus:10.0.1
-	* com.google.android.gms:play-services:10.0.1 
+	* com.google.android.gms:play-services:10.0.1
 
 ---
 
@@ -273,31 +247,12 @@ TBD: V3 modularization might be the better solution
 
 ![](images/secret_codes.png)
 
-
-
 ---
 
-#reviews ①
-
-you are alone
-
-you know nothing.
-
-review your code
-
-explain it to colleagues
-
-invite somebody external
-
-talk about in at a conference, meetup...
-
----
-
-#reviews ②
+#reviews
 
 external security reviews might make sense
 * manifest metadata is not secure ~~API-KEY~~
-
 
 ---
 
@@ -499,3 +454,42 @@ public class SensorbergTestRunner extends android.support.test.runner.AndroidJUn
 
 ![](images/multidex1.png)
 ![](images/multidex2.png)
+
+---
+
+#offer support
+
+github issues
+zendesk
+~~gitter.im chat [^3]~~
+telefone
+workshops
+
+**direct interaction are the best**
+
+[^3]: https://gitter.im/sensorberg-dev/android-sdk
+---
+
+#dogfooding
+
+use services like hockeyapp/crashlytics
+"release early, release often"
+play alpha & beta
+you want problems with your SDK/library happen to a colleague
+hockeyapp continous releases
+
+---
+
+#reviews ①
+
+you are alone
+
+you know nothing.
+
+review your code
+
+explain it to non-andoroid colleagues
+
+invite somebody external
+
+talk about in at a conference, meetup...
