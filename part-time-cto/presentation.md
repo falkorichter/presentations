@@ -64,12 +64,19 @@ limited to 6 months, no autorenewal
 
 ---
 
-#how do I do it
+#how do I do it ①
 
 Fridays off **"If it´s urgent, call me even on a friday, I don´t want to clean up a mess every monday"**
 Monday - Thursday everything is regular
 **crunch times may interupt my schedule** I actually have one day buffer per week
 I don´t believe in overtime, my productivity has a natural limit. **I have to pick up my daughter every wednesday at 4pm**
+
+---
+
+#how do I do it ②
+
+no home office.
+I´m not a home office person.
 
 ---
 
@@ -152,6 +159,7 @@ crunch time buffer
 * tandemploy
 * Elternzeitgesetz
 * hiring is difficult, keeping employees as well
+* freelance part time
 
 ![](images/Screen_Shot_tandemploy.png)
 
