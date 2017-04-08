@@ -66,6 +66,12 @@ limited to 6 months, no autorenewal
 
 #how do I do it ①
 
+Just because I´m not in the office, I´m still responsible
+
+---
+
+#how do I do it ②
+
 Fridays off **"If it´s urgent, call me even on a friday, I don´t want to clean up a mess every monday"**
 Monday - Thursday everything is regular
 **crunch times may interupt my schedule** I actually have one day buffer per week
@@ -73,9 +79,9 @@ I don´t believe in overtime, my productivity has a natural limit. **I have to p
 
 ---
 
-#how do I do it ②
+#how do I do it ③
 
-no home office.
+**no home office.**
 I´m not a home office person.
 
 ---
@@ -145,26 +151,6 @@ crunch time buffer
 
 ---
 
-#final thoughts
-
-* prolong contract? most likely
-* 80% is a good compromise
-* four 100% days a week works best for me.
-* combine with flexi leave
-
----
-
-#talking points
-
-* tandemploy
-* Elternzeitgesetz
-* hiring is difficult, keeping employees as well
-* freelance part time
-
-![](images/Screen_Shot_tandemploy.png)
-
----
-
 #what did I plan to do on my Friday?
 * afternoon with family ✅
 * fix things at home ❌ 
@@ -181,6 +167,25 @@ crunch time buffer
 * get the cargo 🚲 fixed
 * attend a 📷 course
 * family chores (🏦 bank transfers, wash 👖👚👕👔...)
+
+---
+#final thoughts
+
+* prolong contract? most likely
+* 80% is a good compromise
+* four 100% days a week works best for me
+* combine with flexi leave
+
+---
+
+#talking points
+
+* tandemploy
+* Elternzeitgesetz
+* hiring is difficult, keeping employees as well
+* freelance part time
+
+![](images/Screen_Shot_tandemploy.png)
 
 ---
 
