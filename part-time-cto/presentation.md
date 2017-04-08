@@ -12,8 +12,8 @@
 * 31 years old/young
 * CTO since May 1st 2015
 * **proud** dad since May 1st 2015 #maydaygirl
-* distance to grandparents ~250k
-* wife is working 
+* distance to grandparents ~250km
+* 🙎 is working 
 
 ![](images/DSC04060.JPG)
 
@@ -137,7 +137,7 @@ crunch time buffer
 # advantages
 
 I don´t burn out
-I have one day to get my head free #creativity
+I have one day to get my head free #creativity 🛀
 I don´t answer to recruiters
 crunch time buffer
 
@@ -162,6 +162,25 @@ crunch time buffer
 * freelance part time
 
 ![](images/Screen_Shot_tandemploy.png)
+
+---
+
+#what did I plan to do on my Friday?
+* afternoon with family ✅
+* fix things at home ❌ 
+* cleanup basement ❌ / closet ✅
+* take nap ✅ (on my birthday)
+* cleanup the digital family photo archive ✅
+
+---
+
+#what am I actually doing
+* work 🗄 (crunch time)
+* go 🏊/exercise
+* work related 🥞🍳 meetup
+* get the cargo 🚲 fixed
+* attend a 📷 course
+* family chores (🏦 bank transfers, wash 👖👚👕👔...)
 
 ---
 
