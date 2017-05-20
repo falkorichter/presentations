@@ -1,5 +1,5 @@
 # Part time CTO
-## in a start-up[^1]
+## in a startup[^1]
 
 ######this presentation is open source: [github.com/falkorichter/presentations](https://github.com/falkorichter/presentations)
 
