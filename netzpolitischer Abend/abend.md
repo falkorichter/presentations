@@ -12,7 +12,11 @@
 
 ---
 
-# Ihr seid potentiell die wahren Influencer
+# Bei Fragen, fragen!
+
+---
+
+![](images/netzneutralitaet_2.png)
 
 ---
 
