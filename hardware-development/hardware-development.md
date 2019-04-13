@@ -2,10 +2,22 @@
 # sell it professionally
 
 ---
+sensorberg:
+* beacons -> nrf + firmware
+* access hub -> compute computemodule
+
+urban drivestyle
+* station
+* uni micro
+* uni moke
+
+---
 
 resources:
 * pi compute module
 
+
+https://www.raspberrypi.org/documentation/hardware/computemodule/cm-emmc-flashing.md
 
 ---
 ## open source hardware for prototyping:
