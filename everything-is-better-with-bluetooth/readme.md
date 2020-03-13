@@ -15,3 +15,6 @@ We will show you as well how we are testing this very IOT interfacing architectu
 # recording 
 
 https://www.droidcon.com/media-detail?video=329596995 contains the recording.
+
+https://docs.google.com/presentation/d/1lSReYeUx0t_KwUnmn1NX47ozq8uY5GoZ4xzz0IwlJ3s/edit#slide=id.p is the original presentation
+
