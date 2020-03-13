@@ -15,3 +15,5 @@ We will show you as well how we are testing this very IOT interfacing architectu
 # recording 
 
 https://www.droidcon.com/media-detail?video=329596995 contains the recording.
+
+<iframe src="https://player.vimeo.com/video/329596995?badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=145191" title="EVERYTHING IS BETTER WITH(OUT) BLUETOOTH" frameborder="0" allowfullscreen="allowfullscreen" data-ready="true"></iframe>
