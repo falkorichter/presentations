@@ -7,7 +7,44 @@
 
 ---
 
-All details about hardware in this presentation can be derived from the hardware itself and do not contain any internal company secrets. Additional information might be derived from public documentation.
+All details about hardware in this presentation can be derived from the hardware itself and do not contain any internal company secrets. Additional information was derived from public documentation.
+
+---
+
+# why S2 / swipe?
+
+[kiekmo](https://sinnerschrader.com/work/kiekmo/)
+[digital foosball table](https://github.com/sinnerschrader/digitalfoosball)
+[VW emil](https://de.wikipedia.org/wiki/VW_eT!)
+java / kotlin | swift
+[```#s2-iot```](https://app.slack.com/client/T02T629VC/C5K92SXKL)
+
+![right](images/emil.png)
+
+---
+
+# agile Development
+
+* continous delivery
+* kiss [^2]
+* collective code ownership
+* ...
+
+
+[^2]: Keep it simple, stupid
+
+---
+
+# iterate on hardware ❓
+
+# iterate on software ✅
+
+---
+
+# iterate on hardware problems
+* knowledge (hardware)
+* tools (electronics design, os)
+* manufacturing (price + speed)
 
 ---
 
@@ -15,10 +52,36 @@ All details about hardware in this presentation can be derived from the hardware
 
 * *Maker movement* meets
 * *Agile Craftsmanship* meets
-* *Rapid electronic production* capabilities meets
-* *China
+* *Rapid electronic production* capabilities meets *China*
+  * [jlpcb]()
+* open (source) hardware
+  * tindie.com - store
+  * [kicad](https://www.kicad-pcb.org/)
+* platforms
+  * raspberry / ESP / NRF
 
 ![right](images/make_first_issue.jpg)
+
+---
+
+# jlpcb
+
+[50 pcb (business cards)](https://www.instagram.com/p/BwnTBbjnfw3/)
+```PCB Batchs	8534009000	Y1	50	€0.6979	€34.89```
+
+![bottom](images/jlpcb.png)
+
+---
+
+# prototype manufacturing
+
+order PCB
+order parts
+apply solder paste
+hot air
+repeat
+
+![right](images/soldering.png)
 
 ---
 
@@ -43,115 +106,95 @@ highlights in history of IOT from a mobile perspective:
 
 
 ---
+
 ## open source hardware for prototyping:
 
-* tinkerforge
+buy, connect, done
 
-<show some hardware>
+[github.com/Tinkerforge](https://github.com/Tinkerforge)
+
+<show some hardware> [how it works](https://www.tinkerforge.com/en/home/how-it-works/)
 
 ![inline, fill](images/brick_red_big_stack_600.jpg)![inline, fill](images/brick_red_tilted_top_front_600.jpg)![inline, fill](images/brick_red_w_monitor_600.jpg)
 
 ---
 
-* https://store.gumstix.com/products
-   * https://www.gumstix.com/raspberry-pi-family/
-   *
+# pi compute module
+* industrial raspberry as a module
+  * see [Companies using the RPI Compute module](documents/BH-CompaniesusingtheRPIComputemodule-130419-2003.pdf)
+* powerful, small, not cheap
+* plug and play
+  * develop software on prototype, swap into final hardware
+
+![](documents/BH-CompaniesusingtheRPIComputemodule-130419-2003.pdf)
+
+---
+
+### gumstix geppetto
+
+* [https://store.gumstix.com/products](https://store.gumstix.com/products)
+* [https://www.gumstix.com/raspberry-pi-family/](https://www.gumstix.com/raspberry-pi-family/)
+
+<show some hardware> [gepetto](https://geppetto.gumstix.com/#!/dashboard)
 
 
 ---
+
+# NRF
+nordic semi conductos
+bluetooth
+many open source samples [uart](https://infocenter.nordicsemi.com/topic/com.nordic.infocenter.sdk5.v15.3.0/ble_sdk_app_nus_c.html)
+
+![](images/nordic.png)
+
+---
+# the last mile
+
+ESD protection [^3]
+  stay < 48V, go to a lab
+Certification
+  "spurious emissions"
+  pre-certification helps
+case
+cables + connectors (avoid, use standards)
+mass production
+
+![fit right](images/esd.png)
+
+[^3]: electrostatic discharge protection
+
+---
+# nobody wants naked electronics:
+
+* [bopla](https://www.bopla.de/dienstleistungen.html)
+* [apra plast](https://www.apra.de/produktkategorie/individuelle-gehause/)
+* [takachi](http://www.takachi-enclosure.com/data/p_09handheld.html)
+
+<talk about embedded world 2018>
+
+* 3D print, injection mold...
 
 ---
 
 # sample sensorberg
 
 * pi compute module
-* security (Security-Sheet.pdf)[https://documents.sensorberg.com/de/security-sheets/Security-Sheet-Sensorberg.pdf]
-
-https://www.raspberrypi.org/documentation/hardware/computemodule/cm-emmc-flashing.md
-
-
----
-
-
-```
-echo "23" > /sys/class/gpio/export
-echo "out" > /sys/class/gpio/gpio23/direction
-echo "1" > /sys/class/gpio/gpio23/value
-echo "0" > /sys/class/gpio/gpio23/value
-```
+* poe
+* expandability
+* secure (Security-Sheet.pdf)[https://documents.sensorberg.com/de/security-sheets/Security-Sheet-Sensorberg.pdf]
 
 ---
-
-pi compute module
-
-* http://www.embest-tech.com/
-* see [Companies using the RPI Compute module](documents/BH-CompaniesusingtheRPIComputemodule-130419-2003.pdf)
-
-* see []()
-
----
-
-# Gepetto
-
-* https://www.gumstix.com/geppetto/
-
-* https://www.gumstix.com/projects/mininodes-5-node-rpi-cm3/
-* https://twitter.com/miniNodes/status/1088566102924320769/photo/1?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1088566102924320769&ref_url=https%3A%2F%2Fwww.gumstix.com%2Fprojects%2Fmininodes-5-node-rpi-cm3%2F
-
-
----
-# Breadboarding
-
-
----
-ESD protection
-
-
----
-Certification
-
-
----
-Professional case
-
-* bopla
-* apra plast
-* takachi
-
----
-where to go to:
+# where to go to:
 
 * embedded world
 * electronica
-* maker faire
+* maker faires
+* chaos congress/camp
 
 ---
-sources:
+# sources for inspiration:
 
 * sparkfun
-*
-
----
-shopping:
-
-If you want to buy electronics online here a selection of good shops
-* http://www.watterott.com/
-* http://lipoly.de/
-Berlin:
-* http://www.segor.de/
-* http://elmicro.com/index.html
-* reichelt.de
-* sparkfun.com
-* http://www.adafruit.com/
-* http://www.pollin.de/ [added 2015-04-13]
-* http://www.mouser.com/ [added 2015-04-13]
-* http://de.rs-online.com/web/[added 2015-04-13]
-* exp-tech.de [added 2018-05-18] smaller but also good
-
-* http://www.tinkersoup.de/
-* http://www.element14.com/
-
-just in case: (http://www.conrad.de/ce/)
-* untested:https://www.modmypi.com/
-
-from https://www.volkersfreunde.de/elektronik-online-shops/
+  * [new products](https://www.sparkfun.com/categories/new_products) [yt](https://www.youtube.com/user/sparkfun/videos)
+* adafruit
+  * [new products](https://www.adafruit.com/new) [yt](https://www.youtube.com/user/adafruit/videos)
