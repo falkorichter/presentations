@@ -1,4 +1,10 @@
 # Agile Hardware Development
+
+![](images/youtube-video-gif.gif)
+
+---
+
+# Agile Hardware Development
 ## if you can do mobile, you can do hardware[^1]
 
 ######this presentation is open source: [github.com/falkorichter/presentations](https://github.com/falkorichter/presentations)
@@ -6,6 +12,7 @@
 [^1]: Presentation made with [DecksetApp](http://decksetapp.com/) ![inline 8 %](http://cdn3.brettterpstra.com/uploads/2014/03/DecksetIcon.png)
 
 ---
+# disclaimer:
 
 All details about hardware in this presentation can be derived from the hardware itself and do not contain any internal company secrets. Additional information was derived from public documentation.
 
@@ -20,6 +27,27 @@ java / kotlin | swift
 [```#s2-iot```](https://app.slack.com/client/T02T629VC/C5K92SXKL)
 
 ![right](images/emil.png)
+
+---
+
+highlights in history of IOT from a mobile perspective:
+
+* MFI hardware (Apple)
+* IOIO
+* Bluetooth
+
+![fit](images/ioio.jpg)
+![fit](images/apple_mfi.jpg)
+
+---
+
+# Bluetooth
+
+<insert angels singing here>
+
+# Wifi
+
+<insert angels singing here>
 
 ---
 
@@ -41,24 +69,24 @@ java / kotlin | swift
 
 ---
 
-# iterate on hardware problems
+# problems when iterating on hardware
 * knowledge (hardware)
 * tools (electronics design, os)
 * manufacturing (price + speed)
 
 ---
 
-# making is possible
+# news
 
-* *Maker movement* meets
-* *Agile Craftsmanship* meets
-* *Rapid electronic production* capabilities meets *China*
-  * [jlpcb]()
+* Maker movement* meets *Agile Craftsmanship* meets *Rapid electronic production* capabilities meets *China*
+
+* [jlpcb](https://jlcpcb.com) / [aisler.net](https://aisler.net/)
 * open (source) hardware
-  * tindie.com - store
+  * [tindie.com](https://tindie.com) - store for open hardware
   * [kicad](https://www.kicad-pcb.org/)
 * platforms
-  * raspberry / ESP / NRF
+  * raspberry pi / ESP / NRF
+  * [micropython](https://micropython.org/)
 
 ![right](images/make_first_issue.jpg)
 
@@ -82,28 +110,6 @@ hot air
 repeat
 
 ![right](images/soldering.png)
-
----
-
-highlights in history of IOT from a mobile perspective:
-
-* MFI hardware (Apple)
-* IOIO
-* Bluetooth
-
-![fit](images/ioio.jpg)
-![fit](images/apple_mfi.jpg)
-
----
-
-# Bluetooth
-
-<insert angels singing here>
-
-# Wifi
-
-<insert angels singing here>
-
 
 ---
 
@@ -137,13 +143,14 @@ buy, connect, done
 
 <show some hardware> [gepetto](https://geppetto.gumstix.com/#!/dashboard)
 
-
 ---
 
 # NRF
 nordic semi conductos
 bluetooth
 many open source samples [uart](https://infocenter.nordicsemi.com/topic/com.nordic.infocenter.sdk5.v15.3.0/ble_sdk_app_nus_c.html)
+
+OpenSK: [rust anyone?](https://github.com/google/OpenSK)
 
 ![](images/nordic.png)
 
@@ -180,8 +187,8 @@ mass production
 
 * pi compute module
 * poe
-* expandability
-* secure (Security-Sheet.pdf)[https://documents.sensorberg.com/de/security-sheets/Security-Sheet-Sensorberg.pdf]
+* expandability (keypad, lockers)
+* secure: [Security-Sheet.pdf](https://documents.sensorberg.com/de/security-sheets/Security-Sheet-Sensorberg.pdf)
 
 ---
 # where to go to:
@@ -198,3 +205,7 @@ mass production
   * [new products](https://www.sparkfun.com/categories/new_products) [yt](https://www.youtube.com/user/sparkfun/videos)
 * adafruit
   * [new products](https://www.adafruit.com/new) [yt](https://www.youtube.com/user/adafruit/videos)
+
+---
+
+overflow
