@@ -128,7 +128,7 @@ phidgets
 
 > Phidgets are programmable, modular USB devices, either sensors or controllers that you can connect together. Simply write code in your favorite language and solve real-world problems.
 
-![inline, fill](images/phidget_digial_inpput.jpg)
+![inline, fill](images/phidget_digital_input.jpg)
 
 ---
 
