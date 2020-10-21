@@ -124,6 +124,13 @@ buy, connect, done
 ![inline, fill](images/brick_red_big_stack_600.jpg)![inline, fill](images/brick_red_tilted_top_front_600.jpg)![inline, fill](images/brick_red_w_monitor_600.jpg)
 
 ---
+phidgets
+
+> Phidgets are programmable, modular USB devices, either sensors or controllers that you can connect together. Simply write code in your favorite language and solve real-world problems.
+
+![inline, fill](images/phidget_digial_inpput.jpg)
+
+---
 
 # pi compute module
 * industrial raspberry as a module
