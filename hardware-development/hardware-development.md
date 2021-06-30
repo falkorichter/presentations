@@ -116,6 +116,13 @@ Berlin:
 * http://www.element14.com/
 * https://www.pine64.org/
 
+industrial computers:
+* https://fit-iot.com/web/products/fitlet2/
+
+youtube inpirations:
+* https://www.youtube.com/user/greatscottlab
+* https://www.youtube.com/user/geerlingguy compute module4 and raspberry pi cluster computing
+
 just in case: (http://www.conrad.de/ce/)
 * untested:https://www.modmypi.com/
 
