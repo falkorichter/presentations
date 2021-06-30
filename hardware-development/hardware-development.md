@@ -110,6 +110,7 @@ Berlin:
 * http://www.mouser.com/ [added 2015-04-13]
 * http://de.rs-online.com/web/[added 2015-04-13]
 * exp-tech.de [added 2018-05-18] smaller but also good
+* https://www.waveshare.com/ CM4
 
 * http://www.tinkersoup.de/
 * http://www.element14.com/
