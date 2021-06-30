@@ -114,6 +114,7 @@ Berlin:
 
 * http://www.tinkersoup.de/
 * http://www.element14.com/
+* https://www.pine64.org/
 
 just in case: (http://www.conrad.de/ce/)
 * untested:https://www.modmypi.com/
