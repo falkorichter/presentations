@@ -1,5 +1,5 @@
-# make hardware and
-# sell it professionally
+# agile hardware development and
+# how to sell it professionally
 
 ---
 sensorberg:
