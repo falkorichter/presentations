@@ -8,7 +8,7 @@
 # Agile Hardware Development
 ## if you can do Android, you can do hardware[^1]
 
-######this presentation is open source: [github.com/falkorichter/presentations](https://github.com/falkorichter/presentations)
+######this presentation is open source: [github.com/falkorichter/presentations/blob/master/agile-hardware-development/hardware-development_droidcon2021.md](https://github.com/falkorichter/presentations/blob/master/agile-hardware-development/hardware-development_droidcon2021.md)
 
 [^1]: Presentation made with [DecksetApp](http://decksetapp.com/) ![inline 8 %](http://cdn3.brettterpstra.com/uploads/2014/03/DecksetIcon.png)
 
@@ -24,12 +24,12 @@ Highlights in history of IOT from an Android perspective:
 
 * IOIO ("JOJO") - **fail**
 * [Accessory Development Kit](https://stuff.mit.edu/afs/sipb/project/android/docs/tools/adk/index.html)  - **fail**
-* [Bluetooth (LE)](https://github.com/falkorichter/presentations/tree/master/everything-is-better-with-bluetooth)[^1] - ♥️♥️♥️
+* [Bluetooth (LE)](https://github.com/falkorichter/presentations/tree/master/everything-is-better-with-bluetooth)[^3] - ♥️♥️♥️
 * USB-C - **fail**/DJI
 
 ![fit](images/ioio.jpg)
 
-[^1]: Everything is better with(out) Bluetooth
+[^3]: Everything is better with(out) Bluetooth
 
 ---
 
@@ -61,6 +61,20 @@ of work not done--is essential.
 # iterate on hardware ❓
 
 # iterate on software ✅
+
+---
+#case study
+
+* [open taffeta](https://github.com/apiraino/open-taffeta)
+* pi + flutter app + esp32 on board
+* [explanation video in 🇩🇪](https://www.youtube.com/watch?v=p3l2qynlGgI)
+* looks harder than it it really is ➡️
+	* auth on phone -> ring door -> intercept signal (no ring) -> open door
+* live at [cwrkng](https://www.cwrkng.de/)	
+* done by Daniel from [Finke Media](https://www.finke.media/) contact him for Flutter♥️
+
+![right](images/open-taffeta.png)
+
 
 ---
 
@@ -213,3 +227,21 @@ mass production
 * Jeff Geerling ([blog](https://www.jeffgeerling.com/tags/cm4), https://www.youtube.com/watch?v=DHwL1_afSn8&list=PL2_OBreMn7FqeHztTB3BCMGJ_dx1jEK3f)
 
 ---
+
+#Thank you
+
+## [@volkersfreunde](https://twitter.com/volkersfreunde)
+## find me at the [berlindroid](https://berlindroid.de/) booth
+## Wayfair is looking for [talented engineers](https://www.wayfair.de/careers/jobs/?gh_src=a5f36eaa2&keywords=&locationIds=2&stateIds=&countryIds=2)
+
+![inline right](images/link.png)
+
+![filtered](images/youtube-video-gif.gif)
+
+---
+
+#overflow
+
+* Fab-Zugangssysteme
+	* Telegram group
+	* [FabAccess/FabInfra](https://fab-access.org/de/projects/fabaccess/)
