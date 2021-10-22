@@ -1,5 +1,5 @@
 # Agile Hardware Development
-####Falko Richter | Android Dev Wayfair
+####Falko Richter | Android Dev Wayfair | @volkersfreunde
 
 ![](images/youtube-video-gif.gif)
 
@@ -24,12 +24,12 @@ Highlights in history of IOT from an Android perspective:
 
 * IOIO ("JOJO") - **fail**
 * [Accessory Development Kit](https://stuff.mit.edu/afs/sipb/project/android/docs/tools/adk/index.html)  - **fail**
-* [Bluetooth (LE)](https://github.com/falkorichter/presentations/tree/master/everything-is-better-with-bluetooth)[^3] - ♥️♥️♥️
-* USB-C - **fail**/DJI
+* [Bluetooth (LE)](https://github.com/falkorichter/presentations/tree/master/everything-is-better-with-bluetooth)[^4] - ♥️♥️♥️
+* USB(-C) - **fail**/DJI
 
 ![fit](images/ioio.jpg)
 
-[^3]: Everything is better with(out) Bluetooth
+[^4]: Everything is better with(out) Bluetooth
 
 ---
 
@@ -233,6 +233,7 @@ mass production
 ## [@volkersfreunde](https://twitter.com/volkersfreunde)
 ## find me at the [berlindroid](https://berlindroid.de/) booth
 ## Wayfair is looking for [talented engineers](https://www.wayfair.de/careers/jobs/?gh_src=a5f36eaa2&keywords=&locationIds=2&stateIds=&countryIds=2)
+## open source your hardware
 
 ![inline right](images/link.png)
 
