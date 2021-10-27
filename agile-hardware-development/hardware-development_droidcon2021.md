@@ -1,3 +1,8 @@
+Inspired  to be submitted to the community day by the presenation of [Mario Bodemann](https://twitter.com/MarioBodemann)
+http://jfdi.jetzt/_talks/pcbs-and-android/#/step-1
+
+---
+
 # Agile Hardware Development
 ####Falko Richter | Android Dev Wayfair | @volkersfreunde
 
