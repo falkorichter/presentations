@@ -230,7 +230,7 @@ mass production
 * adafruit
   * [new products](https://www.adafruit.com/new) [yt](https://www.youtube.com/user/adafruit/videos)
 * Jeff Geerling ([blog](https://www.jeffgeerling.com/tags/cm4), https://www.youtube.com/watch?v=DHwL1_afSn8&list=PL2_OBreMn7FqeHztTB3BCMGJ_dx1jEK3f)
-
+* single board computers https://youtu.be/u7F2INkWQ5E
 ---
 
 #Thank you
