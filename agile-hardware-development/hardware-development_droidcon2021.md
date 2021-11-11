@@ -1,5 +1,6 @@
 Inspired  to be submitted to the community day by the presenation of [Mario Bodemann](https://twitter.com/MarioBodemann)
 http://jfdi.jetzt/_talks/pcbs-and-android/#/step-1
+Recording available at https://www.droidcon.com/2021/11/10/agile-hardware-development-as-an-android-dev/
 
 ---
 
