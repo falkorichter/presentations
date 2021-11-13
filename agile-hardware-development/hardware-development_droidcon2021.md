@@ -2,6 +2,9 @@ Inspired  to be submitted to the community day by the presenation of [Mario Bode
 http://jfdi.jetzt/_talks/pcbs-and-android/#/step-1
 Recording available at https://www.droidcon.com/2021/11/10/agile-hardware-development-as-an-android-dev/
 
+# news
+https://github.com/kenp-io/not-for-iphone-usb-c made an usb-c jack for an iPhone. https://www.youtube.com/watch?v=FVEQJNRmfDQ very agile!
+
 ---
 
 # Agile Hardware Development
