@@ -1,3 +1,12 @@
+Inspired  to be submitted to the community day by the presenation of [Mario Bodemann](https://twitter.com/MarioBodemann)
+http://jfdi.jetzt/_talks/pcbs-and-android/#/step-1
+Recording available at https://www.droidcon.com/2021/11/10/agile-hardware-development-as-an-android-dev/
+
+# news
+https://github.com/kenp-io/not-for-iphone-usb-c made an usb-c jack for an iPhone. https://www.youtube.com/watch?v=FVEQJNRmfDQ very agile!
+
+---
+
 # Agile Hardware Development
 ####Falko Richter | Android Dev Wayfair | @volkersfreunde
 
@@ -225,7 +234,7 @@ mass production
 * adafruit
   * [new products](https://www.adafruit.com/new) [yt](https://www.youtube.com/user/adafruit/videos)
 * Jeff Geerling ([blog](https://www.jeffgeerling.com/tags/cm4), https://www.youtube.com/watch?v=DHwL1_afSn8&list=PL2_OBreMn7FqeHztTB3BCMGJ_dx1jEK3f)
-
+* single board computers https://youtu.be/u7F2INkWQ5E
 ---
 
 #Thank you
