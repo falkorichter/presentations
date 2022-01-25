@@ -1,7 +1,7 @@
 # Part time CTO
 ## in a startup[^1]
 
-######this presentation is open source: [github.com/falkorichter/presentations](https://github.com/falkorichter/presentations)
+###### this presentation is open source: [github.com/falkorichter/presentations](https://github.com/falkorichter/presentations)
 
 [^1]: Presentation made with [DecksetApp](http://decksetapp.com/) ![inline 8 %](http://cdn3.brettterpstra.com/uploads/2014/03/DecksetIcon.png)
 
