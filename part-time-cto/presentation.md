@@ -1,4 +1,4 @@
-# Part time CTO
+# 80% CTO
 ## in a startup[^1]
 
 ###### this presentation is open source: [github.com/falkorichter/presentations](https://github.com/falkorichter/presentations)
@@ -184,6 +184,7 @@ crunch time buffer
 * Elternzeitgesetz
 * hiring is difficult, keeping employees as well
 * freelance part time
+* https://www.gesetze-im-internet.de/tzbfg/__9a.html
 
 ![](images/Screen_Shot_tandemploy.png)
 
