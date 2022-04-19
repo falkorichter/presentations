@@ -1,8 +1,3 @@
-# chromebooks
-
-
-
----
 
 # Chromebooks
 ## an underdog?[^1]
