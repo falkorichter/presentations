@@ -1,1 +1,3 @@
 https://chaos.social/@derPUPE/110526514866066846
+
+https://hackaday.com/2023/07/16/brute-forcing-a-mobiles-pin-over-usb-with-a-3-board/
