@@ -51,3 +51,6 @@ https://github.com/tobiasheine/fairsplit/pull/40
 * security analysis kotlin/PHP/java
 * frage vom Kollegen
 * ...
+
+## Q&A
+
