@@ -20,6 +20,7 @@
 * Cursor
 * windsurf
 * github CoPilot
+* https://cline.bot/ (VS code plugin)
 * notebookLM -> wissensmanagement
    * https://notebooklm.google.com/notebook/be006e4a-dcd2-4c13-894c-1f165020c52e `35services`
    * https://notebooklm.google.com/notebook/2a477e34-a6c9-48ae-b563-e79b01de4a56 `35services Steuern`
@@ -55,6 +56,11 @@ https://github.com/tobiasheine/fairsplit/blob/main/src/mcp/mcp.service.ts#L33
 ```
 
 ## 1 case study plugin bauen
+
+* tests bauen
+   * https://github.com/falkorichter/agentic-archive.is-ifier/blob/main/tests/test-functions.js#L322
+
+##
 
 https://github.com/tobiasheine/fairsplit/pull/40
 
