@@ -1,4 +1,7 @@
 
+* German, nachfragen auf English
+* Q&A am Ende
+  * Florian notiert Zwischenfragen fürs Ende wenn sie adhoc beantwortet
 
 ## About me
 
