@@ -39,11 +39,11 @@ https://github.com/tobiasheine/fairsplit/blob/main/src/mcp/mcp.service.ts#L33
 
 https://github.com/tobiasheine/fairsplit/pull/40
 
-> 🎯 Product Agent: Requirements gathering and story grooming
-> 💻 Development Agent: Code implementation and architecture
-> 🧪 Testing Agent: Quality assurance and test creation
-> 🚀 DevOps Agent: Deployment and infrastructure management
-> 📋 Orchestrator Agent: Workflow coordination and process enforcement
+> * 🎯 Product Agent: Requirements gathering and story grooming
+> * 💻 Development Agent: Code implementation and architecture
+> * 🧪 Testing Agent: Quality assurance and test creation
+> * 🚀 DevOps Agent: Deployment and infrastructure management
+> * 📋 Orchestrator Agent: Workflow coordination and process enforcement
 
 ### list of case studies
 * huge refactoring, repetitive tasks
