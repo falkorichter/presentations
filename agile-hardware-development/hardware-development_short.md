@@ -49,6 +49,11 @@ highlights in history of IOT from a mobile perspective:
 
 <insert angels singing here>
 
+# NFC / RFID
+
+<insert angels singing here>
+
+
 ---
 
 # agile Development
