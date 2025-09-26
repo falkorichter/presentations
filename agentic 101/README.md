@@ -1,13 +1,7 @@
 footer: © Falko Richter - This presentation was built *without* AI
 slidenumbers: true
 
-* German, Nachfragen gerne auf Englisch
-* Es wird aufgezeichnet, Präsentation gibt es am Ende
-* Q&A am Ende
-  * Florian notiert Themen fürs Q&A
-* 90 Minuten, Florian achtet auf die Zeit :)
-
-### Fragen?
+# TechTalk: Vibe Coding
 
 ---
 
@@ -18,6 +12,16 @@ slidenumbers: true
 	* TIC-mobile/Sinnerschrader/Accenture, Sensorberg (IOT), Kitchenstories 👨‍🍳 Wayfair (🇺🇸 Möbelhandler)
 * 35services 🧰 KTG Grundschule 🚸 Berlindroid 🤖
 * Lastenräder 🚴‍♂️ Quadrokopter ✈ Podcaster, Papa von 2 👧 
+
+---
+
+* German, Nachfragen gerne auf Englisch
+* Es wird aufgezeichnet, Präsentation gibt es am Ende ([open source](https://github.com/falkorichter/presentations/blob/main/agentic%20101/README.md))
+* Q&A am Ende
+  * Florian notiert Themen fürs Q&A
+* 90 Minuten, Florian achtet auf die Zeit :)
+
+### Fragen?
 
 ---
 
