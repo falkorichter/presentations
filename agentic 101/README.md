@@ -131,12 +131,35 @@ Bilder generieren, Bilder bearbeiten (👻)
 * llm
 	* local / remote [Vertex.ai](https://cloud.google.com/vertex-ai?hl=de)...
 
+![](images/cline_vertex1.png)
+
+[VS Code](/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron)
+
 ---
+
+![](images/cline.png)
+
+---
+
+![](images/cline_vertex1.png)
+
+---
+
+![](images/cline_vertex2.png)
+
+---
+
+![inline](images/cline_vertex3.png)
+
+---
+
+
 
 * feedback loop
 * multi agent
 * plan / act mode
 * background mode
+
 
 ---
 
