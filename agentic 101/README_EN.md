@@ -1,4 +1,4 @@
-footer: © Falko Richter - This presentation was built *without* AI
+footer: © Falko Richter - This [presentation](README.md) was built *without* AI and translated with [Github Copilot](https://github.com/falkorichter/presentations/pull/8)
 slidenumbers: true
 
 # TechTalk: Vibe Coding
