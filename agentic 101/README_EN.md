@@ -1,6 +1,8 @@
 footer: © Falko Richter - This [presentation](README.md) was built *without* AI and translated with [Github Copilot](https://github.com/falkorichter/presentations/pull/8)
 slidenumbers: true
 
+> **Translation Note:** This English version was translated from the original German presentation using Claude 3.5 Sonnet (Anthropic) as part of GitHub Copilot's AI assistance.
+
 # TechTalk: Vibe Coding
 
 ---
