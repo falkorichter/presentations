@@ -127,9 +127,17 @@ Bilder generieren, Bilder bearbeiten (👻)
 ## Komponenten / wie geht das?
 * frontend/app
    * Integrationen
+     * Agent Orchestration
+     * agents/md integration
+     * tools (git), command line tools
+     * context compacting
+     * context persistence
+     * model selection
+     * ...
    * MCP
 * llm
-	* local / remote [Vertex.ai](https://cloud.google.com/vertex-ai?hl=de)...
+	* local (https://ollama.com/)
+    * remote [Vertex.ai](https://cloud.google.com/vertex-ai?hl=de)...
 
 ![](images/cline_vertex1.png)
 
