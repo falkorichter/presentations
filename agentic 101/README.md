@@ -3,6 +3,16 @@ slidenumbers: true
 
 # TechTalk: Vibe Coding
 
+Todo: proces:
+https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity
+https://openai.com/index/buy-it-in-chatgpt/
+https://github.blog/changelog/2025-08-28-copilot-coding-agent-now-supports-agents-md-custom-instructions/
+https://docs.cursor.com/en/context/rules#agents-md
+https://agents.md/
+https://arxiv.org/pdf/2505.06120
+https://hbr.org/2025/08/research-the-hidden-penalty-of-using-ai-at-work
+https://www.youtube.com/live/6eBSHbLKuN0?si=uzMRCSg55vTqq_J1
+
 ---
 
 ## About me
